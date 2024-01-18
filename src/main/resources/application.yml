@@ -1,0 +1,15 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:JavaDevKanka/kanka-config.git
+          username: JavaDevKanka
+          password: 1121Regsasai1
+          default-label: master
+          search-paths: "{application}"
