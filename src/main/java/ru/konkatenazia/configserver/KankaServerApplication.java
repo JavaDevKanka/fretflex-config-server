@@ -1,4 +1,4 @@
-package ru.konkatenazia.configserver.kanka.config.server;
+package ru.konkatenazia.configserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
