@@ -15,7 +15,7 @@ java {
 
 tasks.getByName<BootJar>("bootJar") {
     enabled = true
-    mainClass.set("ru.konkatenazia.configserver.KankaServerApplication")
+    mainClass.set("ru.fretflex.configserver.FretFlexConfigServerApplication.java")
     duplicatesStrategy = DuplicatesStrategy.INCLUDE
 }
 
