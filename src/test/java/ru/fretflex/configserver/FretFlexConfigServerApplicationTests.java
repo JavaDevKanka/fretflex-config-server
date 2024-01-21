@@ -1,10 +1,10 @@
-package ru.konkatenazia.configserver;
+package ru.fretflex.configserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class KankaServerApplicationTests {
+class FretFlexConfigServerApplicationTests {
 
     @Test
     void contextLoads() {
