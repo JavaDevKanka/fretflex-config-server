@@ -8,7 +8,7 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:JavaDevKanka/kanka-config.git
+          uri: git@github.com:JavaDevKanka/fretflex-config.git
           username: ${GIT_USERNAME}
           password: ${GIT_PASSWORD}
           default-label: master
