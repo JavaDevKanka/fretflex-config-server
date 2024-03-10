@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+    alias(libraries.plugins.platform)
+    id 'maven-publish'
+}
+
+version = '0.0.1-SNAPSHOT'
+group = "ru.fretflex.config-server"
+
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+ext.versions = [:]
+ext.libs = [:]
+
+dependencies {
+    implementation(platform("ru.fretflex.platform:platform-boot3:${platformVersion}"))
+    implementation(libraries.spring.cloud.dependencies)
+    implementation(libraries.spring.boot.plugin)
+    implementation(libraries.spring.cloud.starter.config)
+    implementation(libraries.spring.boot.configuration.processor)
+    implementation(libraries.spring.cloud.config.server)
+}

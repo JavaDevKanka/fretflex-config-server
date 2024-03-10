@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        maven {
+            url = uri("https://plugins.gradle.org/m2/")
+        }
+        mavenLocal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+    versionCatalogs {
+        libraries{
+            from("ru.fretflex.platform:versioncatalog:${settings["platformVersion"]}")
+        }
+    }
+}
+
+
+rootProject.name = "fretflex-config-server"
+System.setProperty("file.encoding", "utf-8")
+
